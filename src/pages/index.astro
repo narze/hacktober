@@ -1,24 +1,32 @@
 ---
 // Component Imports
-import Button from '../components/Button.astro';
+import "atropos/css"
+import Button from "../components/Button.astro"
+import { Image } from "@astrojs/image/components"
+import Card from "../components/Card.svelte"
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hacktoberfest</title>
+  </head>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
+  <body>
+    <div class="grid place-items-center h-screen content-start">
+      <h1 class="text-4xl my-8 font-bold text-center">Hacktoberfest</h1>
+
+      <div class="container flex flex-wrap mt-8 gap-8 justify-center">
+        <Card client:load />
+      </div>
+      <!-- <Button>Tailwind Button in Astro!</Button> -->
+      <!-- <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a> -->
+    </div>
+  </body>
 </html>
