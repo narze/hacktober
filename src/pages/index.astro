@@ -1,12 +1,27 @@
 ---
 // Component Imports
 import "atropos/css"
-import Button from "../components/Button.astro"
-import { Image } from "@astrojs/image/components"
+// import { Image } from "@astrojs/image/components"
 import Card from "../components/Card.svelte"
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+const entries = [
+  {
+    imagePath: "/images/watasalim.png",
+    title: "Watasalim",
+    description: "รวบรวมวาทกรรมสลิ่มสุดเจ๋ง",
+    webUrl: "https://watasalim.vercel.app",
+    githubUrl: "https://github.com/narze/awesome-salim-quotes",
+  },
+  {
+    imagePath: "/images/react-useless-hooks.png",
+    title: "React Useless Hooks",
+    description: "Monorepo for react hooks, mostly useless btw",
+    webUrl: "https://react-useless.vercel.app",
+    githubUrl: "https://github.com/narze/react-useless",
+  },
+]
 ---
 
 <html lang="en">
@@ -23,7 +38,7 @@ import Card from "../components/Card.svelte"
       <h1 class="text-4xl my-8 font-bold text-center">Hacktober</h1>
 
       <div class="container flex flex-wrap mt-8 gap-8 justify-center">
-        <Card client:load />
+        {entries.map((item) => <Card client:load {...item} />)}
       </div>
       <!-- <Button>Tailwind Button in Astro!</Button> -->
       <!-- <a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a> -->
