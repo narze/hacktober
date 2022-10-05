@@ -11,9 +11,9 @@
 <div id="app">
   <Atropos innerClass="rounded-2xl">
     <div class="card image-full h-64 w-96 rounded-2xl bg-base-100 shadow-xl">
-      <figure>
+      <figure class="overflow-hidden">
         {#if imagePath}
-          <img src={imagePath} alt={title} />
+          <img class="w-full object-cover" src={imagePath} alt={title} />
         {:else}
           <span class="text-xl font-thin text-neutral-content"
             >Now printing</span
