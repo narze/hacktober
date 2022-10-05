@@ -15,7 +15,7 @@ const entries = [
     githubUrl: "https://github.com/narze/react-useless",
   },
   {
-    // imagePath: "/images/react-useless-hooks.png",
+    imagePath: "/images/coffee-to-code.jpg",
     title: "Coffee to Code",
     description: "Developers converting coffee to code in many ways possible.",
     // webUrl: "",
@@ -88,9 +88,11 @@ const entries = [
 
   <body>
     <div class="grid place-items-center h-screen content-start">
-      <h1 class="text-4xl my-8 font-bold text-center">Hacktober</h1>
+      <h1 class="text-4xl my-8 font-bold text-center text-primary">
+        Hacktober
+      </h1>
 
-      <p class="text-lg">My hacktoberfest-friendly projects</p>
+      <p class="text-lg text-secondary">My hacktoberfest-friendly projects</p>
 
       <div class="container flex flex-wrap mt-8 gap-8 justify-center">
         {entries.map((item) => <Card client:load {...item} />)}

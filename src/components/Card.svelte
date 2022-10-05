@@ -10,10 +10,14 @@
 
 <div id="app">
   <Atropos innerClass="rounded-2xl">
-    <div class="card image-full w-96 rounded-2xl bg-base-100 shadow-xl">
-      <figure class="overflow-hidden">
+    <div class="card image-full h-64 w-96 rounded-2xl bg-base-100 shadow-xl">
+      <figure>
         {#if imagePath}
-          <img src={imagePath} alt={title} width={500} fit="cover" />
+          <img src={imagePath} alt={title} />
+        {:else}
+          <span class="text-xl font-thin text-neutral-content"
+            >Now printing</span
+          >
         {/if}
       </figure>
       <div class="card-body">
@@ -22,7 +26,7 @@
         <div class="card-actions justify-end">
           {#if webUrl}
             <a
-              class="btn btn-outline btn-sm normal-case"
+              class="btn btn-outline btn-success btn-sm normal-case"
               href={webUrl}
               target="_blank"
               rel="noopener noreferrer">Website</a
@@ -30,7 +34,7 @@
           {/if}
           {#if githubUrl}
             <a
-              class="btn btn-outline btn-sm normal-case"
+              class="btn btn-outline btn-success btn-sm normal-case"
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer">Code</a
@@ -43,7 +47,7 @@
 </div>
 
 <style>
-  .overflow-hidden {
-    overflow: hidden;
+  img {
+    object-fit: contain;
   }
 </style>
