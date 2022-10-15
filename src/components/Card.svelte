@@ -5,7 +5,6 @@
   import { Founders } from "../enums/founders.enum";
   import { AcademicTopics } from "../enums/topics.enum";
   import "../style/typography.css";
-  import "../style/spacing.css";
   import "../style/card-theme.css";
 
   export let display: "light" | "dark";
@@ -31,8 +30,10 @@
 </script>
 
 <div id="app">
-  <Atropos>
-    <div class="card image-full h-64 w-full {colorSet.background} shadow-xl">
+  <Atropos class="rounded-2xl">
+    <div
+      class="card image-full h-64 w-full {colorSet.background} rounded-2xl shadow-xl"
+    >
       <figure class="overflow-hidden">
         {#if imagePath}
           <img class="w-full object-cover" src={imagePath} alt={title} />
