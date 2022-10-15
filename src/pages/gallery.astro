@@ -1,0 +1,99 @@
+---
+// Component Imports
+import "atropos/css";
+// import { Image } from "@astrojs/image/components"
+import Card from "../components/Card.svelte";
+import type { CardProps } from "../types/card.interface";
+import { Founders } from "../enums/founders.enum";
+import { AcademicTopics } from "../enums/topics.enum";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+const entries: CardProps[] = [
+  {
+    display: "light",
+    title: "React Useless Hooks",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.React,
+    imagePath: "/images/react-useless-hooks.png",
+    githubUrl: "https://github.com/narze/react-useless",
+  },
+  {
+    display: "dark",
+    title: "Coffee to Code",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.LanguageDiversity,
+    imagePath: "/images/coffee-to-code.jpg",
+    githubUrl: "https://github.com/narze/coffee-to-code",
+  },
+  {
+    display: "light",
+    title: "Torpleng - ต่อเพลง",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.Vue,
+    imagePath: "/images/torpleng.jpg",
+    githubUrl: "https://github.com/narze/torpleng",
+  },
+  {
+    display: "dark",
+    title: "Nunmun - นั่นมัน....!",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.Svelte,
+    imagePath: "/images/nunmun.png",
+    githubUrl: "https://github.com/narze/nunmun",
+  },
+  {
+    display: "light",
+    title: "Awesome Cheab Quotes - คำคมเฉียบ ๆ",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.Vue,
+    githubUrl: "https://github.com/narze/awesome-cheab-quotes",
+    imagePath: undefined,
+  },
+  {
+    display: "dark",
+    title: "Dumb Questions - คำถามโง่ ๆ",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.Git,
+    githubUrl: "https://github.com/narze/dumb-questions-th",
+    imagePath: undefined,
+  },
+  {
+    display: "light",
+    title: "Watasalim",
+    theme: "playful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.Next,
+    imagePath: "/images/watasalim.png",
+    githubUrl: "https://github.com/narze/awesome-salim-quotes",
+  },
+];
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Hacktoberfest Mesuem</title>
+  </head>
+
+  <body>
+    <div class="grid grid-cols-12 gap-x-5 gap-y-8 px-32">
+      {
+        entries.map((item, i) => (
+          <div class={`col-span-4 col-start-${i % 2 == 0 ? 2 : 7}`}>
+            <Card client:load {...item} />
+          </div>
+        ))
+      }
+    </div>
+  </body>
+</html>
