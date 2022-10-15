@@ -15,6 +15,6 @@
     @apply font-english text-2xl font-light;
   }
   .en-button-label {
-    @apply font-english text-base font-bold;
+    @apply font-english text-base font-bold text-HKBF-white;
   }
 }

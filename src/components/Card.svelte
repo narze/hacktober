@@ -21,12 +21,12 @@
       ? {
           text: "text-HKBF-dark",
           background: "display-light bg-HKBF-white",
-          button: "btn-secondary",
+          button: "btn-secondary btn-active",
         }
       : {
           text: "text-HKBF-white",
           background: "bg-HKBF-dark",
-          button: "btn-primary",
+          button: "btn-primary btn-outline",
         };
 </script>
 
@@ -69,7 +69,7 @@
             </div>
             <div class="card-actions justify-end">
               <a
-                class="en-button-label btn btn-outline btn-sm normal-case {colorSet.button}"
+                class="en-button-label btn btn-sm normal-case {colorSet.button}"
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
