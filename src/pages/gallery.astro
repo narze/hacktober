@@ -84,10 +84,16 @@ const entries: CardProps[] = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Hacktoberfest Mesuem</title>
+    <style>
+      body {
+        background: url(/gallery-background.jpg);
+        height: 100vh;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="grid grid-cols-12 gap-x-5 gap-y-8 px-32">
+    <div class="grid grid-cols-12 gap-x-5 gap-y-8 px-32 py-8">
       {
         entries.map((item, i) => (
           <div class={`col-span-4 col-start-${i % 2 == 0 ? 2 : 7}`}>
