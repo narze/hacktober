@@ -29,10 +29,10 @@
         };
 </script>
 
-<div id="app">
+<div id="app" class="w-full">
   <Atropos class="rounded-2xl">
     <div
-      class="card image-full h-64 w-full {colorSet.background} rounded-2xl shadow-xl"
+      class="card image-full h-64 {colorSet.background} rounded-2xl shadow-xl"
     >
       <figure class="overflow-hidden">
         {#if imagePath}
