@@ -45,20 +45,22 @@
       </figure>
       <div class="card-body">
         <div
-          class="grid h-full grid-flow-col grid-cols-1 grid-rows-2 justify-between px-2"
+          class="grid max-h-full grid-flow-col grid-cols-1 grid-rows-2 justify-between px-2"
         >
           <div class="col-span-1 py-2">
             <div class="flex content-center justify-between">
-              <p class="th-title line-clamp-2 {colorSet.text}">{title}</p>
+              <p class="th-title break-words line-clamp-2 {colorSet.text}">
+                {title}
+              </p>
               {#if theme == "mindful"}
                 <Fa
                   icon={faBrain}
-                  class="place-self-center text-2xl {colorSet.text}"
+                  class="ml-2 place-self-center text-2xl {colorSet.text}"
                 />
               {:else}
                 <Fa
                   icon={faGamepad}
-                  class="place-self-center text-2xl {colorSet.text}"
+                  class="ml-2 place-self-center text-2xl {colorSet.text}"
                 />
               {/if}
             </div>
@@ -66,7 +68,7 @@
           <div class="col-span-1 py-2">
             <div class="grid grid-flow-col grid-rows-2 gap-y-2">
               <p class="en-content {colorSet.text}">{founderName}</p>
-              <p class="en-light-title {colorSet.text}">{topic}</p>
+              <p class="en-light-title line-clamp-1 {colorSet.text}">{topic}</p>
             </div>
             <div class="card-actions justify-end">
               <a

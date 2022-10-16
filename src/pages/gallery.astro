@@ -12,7 +12,7 @@ import { AcademicTopics } from "../enums/topics.enum";
 // https://docs.astro.build/core-concepts/astro-components/
 const entries: CardProps[] = [
   {
-    display: "light",
+    display: "dark",
     title: "React Useless Hooks",
     theme: "playful",
     founderName: Founders.Narze,
@@ -21,9 +21,9 @@ const entries: CardProps[] = [
     githubUrl: "https://github.com/narze/react-useless",
   },
   {
-    display: "dark",
+    display: "light",
     title: "Coffee to Code",
-    theme: "playful",
+    theme: "mindful",
     founderName: Founders.Narze,
     topic: AcademicTopics.LanguageDiversity,
     imagePath: "/images/coffee-to-code.jpg",
@@ -48,7 +48,7 @@ const entries: CardProps[] = [
     githubUrl: "https://github.com/narze/nunmun",
   },
   {
-    display: "light",
+    display: "dark",
     title: "Awesome Cheab Quotes - คำคมเฉียบ ๆ",
     theme: "playful",
     founderName: Founders.Narze,
@@ -57,7 +57,7 @@ const entries: CardProps[] = [
     imagePath: undefined,
   },
   {
-    display: "dark",
+    display: "light",
     title: "Dumb Questions - คำถามโง่ ๆ",
     theme: "playful",
     founderName: Founders.Narze,
@@ -73,6 +73,15 @@ const entries: CardProps[] = [
     topic: AcademicTopics.Next,
     imagePath: "/images/watasalim.png",
     githubUrl: "https://github.com/narze/awesome-salim-quotes",
+  },
+  {
+    display: "dark",
+    title: "Deploydeemai.today",
+    theme: "mindful",
+    founderName: Founders.Narze,
+    topic: AcademicTopics.Svelte,
+    imagePath: "/images/deploydeemai.png",
+    githubUrl: "https://github.com/narze/deploydeemai.today",
   },
 ];
 ---
@@ -95,15 +104,11 @@ const entries: CardProps[] = [
       </div>
       <div class="col-span-9 grid-start-2 overflow-scroll scroll-smooth">
         <div
-          class="grid grid-cols-9 grid-flow-row justify-between gap-x-5 gap-y-8 w-full"
+          class="grid grid-cols-9 grid-flow-row justify-between gap-x-5 gap-y-8 w-full p-12"
         >
           {
             entries.map((item, i) => (
-              <div
-                class={`col-start-${
-                  i % 2 == 0 ? 1 : 5
-                } col-span-4 col-end-auto`}
-              >
+              <div class="col-span-3 col-start-auto">
                 <Card client:load {...item} />
               </div>
             ))
