@@ -15,19 +15,18 @@
   export let githubUrl: string;
   export let imagePath: string | undefined;
 
-  let colorSet = {
-    text: "text-HKBF-dark",
-    background: "display-light bg-HKBF-white",
-    button: "btn-secondary btn-active",
-  };
-
-  $: {
-    if (display === "dark") {
-      colorSet.text = "text-HKBF-white";
-      colorSet.background = "bg-HKBF-dark";
-      colorSet.button = "btn-primary btn-outline";
-    }
-  }
+  const colorSet =
+    display == "light"
+      ? {
+          text: "text-HKBF-dark",
+          background: "display-light bg-HKBF-white",
+          button: "btn-secondary btn-active",
+        }
+      : {
+          text: "text-HKBF-white",
+          background: "bg-HKBF-dark",
+          button: "btn-primary btn-outline",
+        };
 </script>
 
 <div id="app" class="w-full">
