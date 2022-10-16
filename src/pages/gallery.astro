@@ -84,41 +84,33 @@ const entries: CardProps[] = [
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Hacktoberfest Mesuem</title>
-    <style>
-      body {
-        background: url(/assets/gallery-background.jpg);
-        height: 100vh;
-      }
-    </style>
   </head>
 
   <body>
     <div
-      class="grid grid-cols-12 grid-flow-col gap-x-5 gap-y-8 px-32 py-8 justify-evenly"
+      class="grid grid-cols-12 grid-flow-col gap-x-5 gap-y-8 px-32 py-8 justify-evenly h-[95vh]"
     >
       <div class="col-span-1 grid-start-1">
         <img class="w-max" src="/assets/image-1.png" />
       </div>
-      <div class="col-span-9 grid-start-2">
-        <div class="max-h-screen scroll-smooth">
-          <div
-            class="grid grid-cols-9 grid-flow-row justify-between gap-x-5 gap-y-8 w-full"
-          >
-            {
-              entries.map((item, i) => (
-                <div
-                  class={`col-start-${
-                    i % 2 == 0 ? 1 : 5
-                  } col-span-4 col-end-auto`}
-                >
-                  <Card client:load {...item} />
-                </div>
-              ))
-            }
-          </div>
+      <div class="col-span-9 grid-start-2 overflow-scroll scroll-smooth">
+        <div
+          class="grid grid-cols-9 grid-flow-row justify-between gap-x-5 gap-y-8 w-full"
+        >
+          {
+            entries.map((item, i) => (
+              <div
+                class={`col-start-${
+                  i % 2 == 0 ? 1 : 5
+                } col-span-4 col-end-auto`}
+              >
+                <Card client:load {...item} />
+              </div>
+            ))
+          }
         </div>
       </div>
-      <div class="col-span-2 h-5/6">
+      <div class="col-span-2 h-full">
         <div class="grid grid-cols-1 grid-flow-row content-end h-full">
           <div class="col-span-1">
             <img class="w-full h-full" src="/assets/image-3.png" />

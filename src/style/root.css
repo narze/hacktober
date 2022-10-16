@@ -6,3 +6,8 @@
   --padding-card: 8px;
   --n: theme(colors.HKBF-white);
 }
+
+body {
+  background: url(/assets/gallery-background.jpg);
+  height: 100vh;
+}
