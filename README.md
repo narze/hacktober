@@ -36,11 +36,11 @@ Please follow the [Contribution guidelines.](CONTRIBUTING.MD) One more thing ...
 
 # Pillars of Creation
 
-- **Manassarn Manoonchai** @narze - original code
-- **Tanakorn Pisnupoomi** @intaniger - initiate new gallery page based from existing code
-- **Chamikorn Phiwla-oung** @Jabont - ideation of website's theme
-- **Puvit Pracharktam** @pondspective - @intaniger's Polaris on getting started with UI design.
-- **Phoomparin Mano** @heypoom - CI/CD setup and wonderful domain name https://museum.creatorsgarten.org
+- [**Manassarn Manoonchai**](https://github.com/narze) - original code
+- [**Tanakorn Pisnupoomi**](https://github.com/intaniger) - initiate new gallery page based from existing code
+- [**Chamikorn Phiwla-oung**](https://github.com/Jabont) - ideation of website's theme
+- [**Puvit Pracharktam**](https://github.com/pondspective) - @intaniger's Polaris on getting started with UI design.
+- [**Phoomparin Mano**](https://github.com/heypoom) - CI/CD setup and wonderful domain name https://museum.creatorsgarten.org
 - `/* your name are the next one ... */`
 
 ![https://www.facebook.com/spaceth/posts/pfbid08ksUhZJPHo1YbkprvybRYfHj5hgqsMGZ46Up8n3FEAaktSUcF5JuJrYRYKSR9azCl](https://stsci-opo.org/STScI-01GFNN3PWJMY4RQXKZ585BC4QH.png)
