@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --padding-card: 8px;
+}
+
+body {
+  background: url(/assets/gallery-background.jpg);
+  height: 100vh;
+  @apply bg-cover bg-center;
+}

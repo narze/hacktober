@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .display-light::before {
+    background-color: theme(colors.HKBF-white) !important;
+  }
+}

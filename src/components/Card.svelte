@@ -1,16 +1,39 @@
-<script>
-  import Atropos from "atropos/svelte"
+<script lang="ts">
+  import Atropos from "atropos/svelte";
+  import Fa from "svelte-fa";
+  import { faBrain, faGamepad } from "@fortawesome/free-solid-svg-icons";
+  import { Founders } from "../enums/founders.enum";
+  import { AcademicTopics } from "../enums/topics.enum";
+  import "../style/typography.css";
+  import "../style/card-theme.css";
 
-  export let imagePath
-  export let title
-  export let description
-  export let webUrl
-  export let githubUrl
+  export let display: "light" | "dark";
+  export let title: string;
+  export let theme: "playful" | "mindful";
+  export let founderName: Founders;
+  export let topic: AcademicTopics;
+  export let githubUrl: string;
+  export let imagePath: string | undefined;
+
+  const colorSet =
+    display == "light"
+      ? {
+          text: "text-HKBF-dark",
+          background: "display-light bg-HKBF-white",
+          button: "btn-secondary btn-active",
+        }
+      : {
+          text: "text-HKBF-white",
+          background: "bg-HKBF-dark",
+          button: "btn-primary btn-outline",
+        };
 </script>
 
-<div id="app">
-  <Atropos innerClass="rounded-2xl">
-    <div class="card image-full h-64 w-96 rounded-2xl bg-base-100 shadow-xl">
+<div id="app" class="w-full">
+  <Atropos class="rounded-2xl">
+    <div
+      class="card image-full h-64 {colorSet.background} rounded-2xl shadow-xl"
+    >
       <figure class="overflow-hidden">
         {#if imagePath}
           <img class="w-full object-cover" src={imagePath} alt={title} />
@@ -21,25 +44,43 @@
         {/if}
       </figure>
       <div class="card-body">
-        <h2 class="card-title">{title}</h2>
-        <p>{description}</p>
-        <div class="card-actions justify-end">
-          {#if webUrl}
-            <a
-              class="btn btn-outline btn-success btn-sm normal-case"
-              href={webUrl}
-              target="_blank"
-              rel="noopener noreferrer">Website</a
-            >
-          {/if}
-          {#if githubUrl}
-            <a
-              class="btn btn-outline btn-success btn-sm normal-case"
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer">Code</a
-            >
-          {/if}
+        <div
+          class="grid max-h-full grid-flow-col grid-cols-1 grid-rows-2 justify-between px-2"
+        >
+          <div class="col-span-1 py-2">
+            <div class="flex content-center justify-between">
+              <p class="th-title break-words line-clamp-2 {colorSet.text}">
+                {title}
+              </p>
+              {#if theme == "mindful"}
+                <Fa
+                  icon={faBrain}
+                  class="ml-2 place-self-center text-2xl {colorSet.text}"
+                />
+              {:else}
+                <Fa
+                  icon={faGamepad}
+                  class="ml-2 place-self-center text-2xl {colorSet.text}"
+                />
+              {/if}
+            </div>
+          </div>
+          <div class="col-span-1 py-2">
+            <div class="grid grid-flow-col grid-rows-2 gap-y-2">
+              <p class="en-content {colorSet.text}">{founderName}</p>
+              <p class="en-light-title line-clamp-1 {colorSet.text}">{topic}</p>
+            </div>
+            <div class="card-actions justify-end">
+              <a
+                class="en-button-label btn btn-sm normal-case {colorSet.button}"
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Code
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
