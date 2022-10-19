@@ -1,6 +1,13 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
 
+export interface DetailedPageProps {
+  inspiredBy?: string;
+  keywords: string[];
+  descriptionMarkdown: string;
+  contributingMarkdown?: string;
+}
+
 export interface CardProps {
   display: "light" | "dark";
   title: string;
@@ -9,4 +16,5 @@ export interface CardProps {
   topic: AcademicTopics;
   githubUrl: string;
   imagePath: string | undefined;
+  detail?: DetailedPageProps;
 }
