@@ -4,7 +4,7 @@ In order to maintain the awesomeness of developers' ideas for Hacktoberfest, Cre
 
 ## Wanna posts your awesome project?
 
-- [Contribution guidelines](CONTRIBUTING.md)
+- [Contribution guidelines](CONTRIBUTING.MD)
 - All content that is being added to the [Hacktoberfest Museum](https://museum.creatorsgarten.org) website must respect to the [Hacktoberfest Code of Conduct.](https://do.co/hacktoberconduct)
 
 ## All data you need
@@ -31,7 +31,7 @@ export interface DetailedPageProps {
 
 ## Any idea to make this website better?
 
-Please follow the [Contribution guidelines.](CONTRIBUTING.md) One more thing ... don't be hesitant to add any extra features you think can enhance this website by generating PR not only to `page/index.astro`.
+Please follow the [Contribution guidelines.](CONTRIBUTING.MD) One more thing ... don't be hesitant to add any extra features you think can enhance this website by generating PR not only to `page/index.astro`.
 <br />
 
 # Pillars of Creation
