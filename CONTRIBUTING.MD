@@ -1,9 +1,15 @@
+**Always tag `🚀 READY FOR REVIEW` once your PR is Ready to be one of us :)**
+
 ## Quick guide to add your project
 
 > Add your new entry to [entries constant in `src/pages/index.astro`](src/pages/index.astro#13),
 > <br /> follow structure defined in [src/types/card.interface.ts](src/types/card.interface.ts)
 
+**Please tag `The new entry 💫` to the PR in order to categorize yours as the star being recognized by the Museum.**
+
 # Out-of-the-box contributing
+
+**Please tag `Enhancement 🛠` to the PR as you're developing the Museum more wonderfully!**
 
 ### Features-in-wait
 
