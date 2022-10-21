@@ -1,4 +1,5 @@
 export enum Founders {
   Narze = "Manassarn Manoonchai",
-  Intaniger = "Tanakorn Pisnupoomi"
+  Intaniger = "Tanakorn Pisnupoomi",
+  Tinarskii = "Tinnaphat Somsang"
 }
