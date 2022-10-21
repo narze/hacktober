@@ -6,7 +6,7 @@ In order to maintain the awesomeness of developers' ideas for Hacktoberfest, Cre
 
 - [Contribution guidelines](CONTRIBUTING.MD)
 - All content that is being added to the [Hacktoberfest Museum](https://museum.creatorsgarten.org) website must respect to the [Hacktoberfest Code of Conduct.](https://do.co/hacktoberconduct)
-- 🪄 AND DON'T FORGET TO CLAIM YOUR TICKET! via [Eventpop application form.](https://www.eventpop.me/events/13854/application_forms/845/applicants/new)
+- 🪄 **AND DON'T FORGET TO CLAIM YOUR TICKET!** via [Eventpop application form.](https://www.eventpop.me/events/13854/application_forms/845/applicants/new)
 
 ## All data you need
 

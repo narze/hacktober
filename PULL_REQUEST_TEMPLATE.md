@@ -12,4 +12,4 @@ We value your endeavors to enhance the Hacktoberfest Museum better!
 
 ## Finally:
 
-> 🪄 DON'T FORGET TO CLAIM YOUR TICKET! via [Eventpop application form.](https://www.eventpop.me/events/13854/application_forms/845/applicants/new)
+> 🪄 **DON'T FORGET TO CLAIM YOUR TICKET!** via [Eventpop application form.](https://www.eventpop.me/events/13854/application_forms/845/applicants/new)
