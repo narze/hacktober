@@ -4,5 +4,6 @@ export enum AcademicTopics {
   Svelte = "Svelte",
   LanguageDiversity = "Language diversity",
   Git = "Git",
-  Next = "Next.js"
+  Next = "Next.js",
+  Solid = "Solid.js"
 }
