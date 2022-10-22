@@ -77,7 +77,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Code
+                See more
               </a>
             </div>
           </div>
