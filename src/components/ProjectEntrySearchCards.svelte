@@ -9,8 +9,11 @@
   let originalEntries = entries;
 
   const filterEntries = (newEntries: CardProps[], newSearchValue: string) =>
-    newEntries.filter((entry) =>
-      entry.founderName.toLowerCase().includes(newSearchValue)
+    newEntries.filter(
+      (entry) =>
+        entry.founderName.toLowerCase().includes(newSearchValue) ||
+        entry.title.toLowerCase().includes(newSearchValue) ||
+        entry.topic.toLowerCase().includes(newSearchValue)
     );
 
   $: {
