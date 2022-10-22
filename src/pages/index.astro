@@ -34,6 +34,13 @@ const entries = await Astro.glob<EntriesModule>('../entries/*.ts')
         <div
           class="grid grid-cols-9 grid-flow-row justify-between gap-x-5 gap-y-8 w-full p-12"
         >
+          <div class="col-span-9">
+            <input
+              type="text"
+              class="input w-full"
+              placeholder="Search by founder, topic, project"
+            />
+          </div>
           {
             entries.map((item) => (
               <div class="col-span-9 col-start-auto lg:col-span-4 xl:col-span-4">
