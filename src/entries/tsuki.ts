@@ -7,6 +7,7 @@ export default {
   theme: "playful",
   founderName: Founders.Gusb3ll,
   topic: AcademicTopics.Python,
-  imagePath: "https://user-images.githubusercontent.com/77166960/154808873-1bdd3aab-1aa4-4fcd-a3e6-17dfcde3b720.png",
+  imagePath:
+    "https://user-images.githubusercontent.com/77166960/154808873-1bdd3aab-1aa4-4fcd-a3e6-17dfcde3b720.png",
   githubUrl: "https://github.com/phoowitchutanon/Tsuki",
 };
