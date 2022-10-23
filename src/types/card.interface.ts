@@ -1,6 +1,6 @@
 import { Founders } from "../enums/founders.enum";
 import { AcademicTopics } from "../enums/topics.enum";
-import { ProjectThemes } from '../enums/themes.enum';
+import { ProjectThemes } from "../enums/themes.enum";
 
 export interface DetailedPageProps {
   inspiredBy?: string;
