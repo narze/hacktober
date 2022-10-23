@@ -6,4 +6,4 @@ module.exports = {
   tailwindConfig: "./tailwind.config.cjs",
   tabWidth: 2,
   useTabs: false,
-};
+}
