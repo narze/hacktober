@@ -4,9 +4,9 @@ import "atropos/css";
 import "../style/root.css";
 // import { Image } from "@astrojs/image/components"
 import Card from "../components/Card.svelte";
-import type { CardProps } from "../types/card.interface";
+import { EntriesModule } from "../types/entry.interface";
 
-const entries = await Astro.glob<CardProps>('../entries/*.mdx')
+const entries = await Astro.glob<EntriesModule>('../entries/*.ts')
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -37,7 +37,7 @@ const entries = await Astro.glob<CardProps>('../entries/*.mdx')
           {
             entries.map((item) => (
               <div class="col-span-9 col-start-auto lg:col-span-4 xl:col-span-4">
-                <Card client:load {...item.frontmatter} />
+                <Card client:load {...item.default} />
               </div>
             ))
           }
