@@ -2,10 +2,10 @@
   import { onMount } from "svelte";
 
   export let value = "";
-  export let loaded = false;
+  export let componentIsHydrated = false;
 
   onMount(() => {
-    loaded = true;
+    componentIsHydrated = true;
   });
 
   const onChangeValue = (e: Event) => {
@@ -19,5 +19,5 @@
   placeholder="Search by founder, topic, project"
   {value}
   on:input={onChangeValue}
-  disabled={!loaded}
+  disabled={!componentIsHydrated}
 />
