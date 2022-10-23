@@ -14,7 +14,7 @@ In order to maintain the awesomeness of developers' ideas for Hacktoberfest, Cre
 export interface CardProps {
   display: "light" | "dark";
   title: string;
-  theme: "playful" /* 🎮 */ | "mindful" /* 🧠 */;
+  theme: ProjectThemes; /* ("playful" 🎮 | "mindful" 🧠 ); */
   founderName: Founders;
   topic: AcademicTopics;
   githubUrl: string;
