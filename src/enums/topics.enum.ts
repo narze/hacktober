@@ -7,4 +7,5 @@ export enum AcademicTopics {
   Next = "Next.js",
   Solid = "Solid.js",
   Hardware = "Hardware.cpp",
+  Python = "Python",
 }
