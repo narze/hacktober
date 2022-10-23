@@ -6,7 +6,7 @@ export default {
   title: "KNACKSAT2 TGPS Sattlelite hardware",
   theme: "playful",
   founderName: Founders.KNACKSAT2TGPS,
-  topic: AcademicTopics.Hardware,
+  topic: AcademicTopics.HardwareANDcpp,
   imagePath: "/images/TGPSPro.png",
   githubUrl: "https://github.com/KNACKSAT2-TGPS",
 };
